@@ -26,5 +26,6 @@ public class stream {
         hashmap.put("sachin", new Cricketer("Sachin", 14000));
         hashmap.put("dravid", new Cricketer("Dravid", 12000));
         System.out.println(hashmap.get("sachin"));
+        System.out.println(hashmap.get("dravid"));
     }
 }
