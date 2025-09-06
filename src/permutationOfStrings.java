@@ -14,7 +14,7 @@ class permutationOfStrings {
             ans.add(s.toString());
             return;
         }
-
+        System.out.println(index + " " + s.toString());
         // Swap the current index with all
         // possible indices and recur
         for (int i = index; i < s.length(); i++) {
@@ -37,7 +37,7 @@ class permutationOfStrings {
         // Stores the final answer
         List<String> ans = new ArrayList<>();
         StringBuilder str = new StringBuilder(s);
-
+        System.out.println(str);
         recurPermute(0, str, ans);
 
         // sort the resultant list
@@ -47,7 +47,7 @@ class permutationOfStrings {
     }
 
     public static void main(String[] args) {
-        String s = "ABC";
+        String s = "ABCD";
         List<String> res = findPermutation(s);
         for (String x : res) {
             System.out.print(x + " ");

@@ -19,6 +19,8 @@ public class stream1
 
         Stream<Integer> limit = Stream.iterate(0, i -> i + 1).limit(100);
         Stream<String> limit1 = Stream.generate(() -> "Hello").limit(5);
+        System.out.println(limit);
+        System.out.println(limit1);
 
     }
 }
